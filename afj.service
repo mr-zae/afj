@@ -1,0 +1,9 @@
+[Unit]
+Description=Application for job 
+[Service]
+EnvironmentFile=/home/zae/afj.conf
+WorkingDirectory=/home/zae/
+ExecStart=/home/zae/afj.sh
+Type=forking
+[Install]
+WantedBy=multi-user.target
